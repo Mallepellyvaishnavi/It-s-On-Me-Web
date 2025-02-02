@@ -2,7 +2,8 @@ import React from 'react';
 import SVGComponent from './Svg';
 import MenuComponent from './Menu';
 import Logo from './assets/logo.jpg';
-
+import "./App.css";
+import { Link } from 'react-scroll';
 const Header = () => {
   return (
     <>
@@ -13,17 +14,22 @@ const Header = () => {
             
           </a>
           <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a className="mr-5 hover:text-gray-900" href="#">Pos</a>
-            <a className="mr-5 hover:text-gray-900" href="#">Add On</a>
-            <a className="mr-5 hover:text-gray-900" href="#">Outlet Types</a>
-            <a className="mr-5 hover:text-gray-900" href="#">Pricing</a>
+          <Link to="pos" smooth={true} duration={500} className="mr-5 hover:text-gray-900 cursor-pointer">Pos</Link>
+          <Link to="add-on" smooth={true} duration={500} className="mr-5 hover:text-gray-900 cursor-pointer">Add On</Link>
+
+          <Link to="outlet-types" smooth={true} duration={500} className="mr-5 hover:text-gray-900 cursor-pointer">Outlet Types</Link>
+          <Link to="pricing" smooth={true} duration={500} className="mr-5 hover:text-gray-900 cursor-pointer">Pricing</Link>
           </nav>
+          <Link to="contact-us" smooth={true} duration={500}>
+
           <button className="inline-flex items-center text-white bg-[#e63946] border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
             REQUEST A DEMO
-
+           
           </button>
+          </Link>
         </div>
       </header>
+      <section id="pos">
       <section class="text-gray-600 body-font">
         <div class="container mx-auto flex px-5 py-0 md:flex-row flex-col items-center">
           <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
@@ -41,6 +47,9 @@ const Header = () => {
           </div>
         </div>
       </section>
+      </section>
+      <section id="add-on">
+
       <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
           <div class="text-center mb-20">
@@ -120,6 +129,9 @@ const Header = () => {
           </div>
         </div>
       </section>
+      </section>
+      <section id="outlet-types">
+
       <section class="text-gray-600 body-font">
         <div class="container px-5 py-1 mx-auto flex flex-wrap">
           <div class="flex flex-wrap w-full">
@@ -240,7 +252,8 @@ const Header = () => {
           </div>
         </div>
       </section>
-
+      </section>
+      
       <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
           
@@ -288,6 +301,8 @@ const Header = () => {
           </div>
         </div>
       </section>
+     
+    
       <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
           <div class="text-center mb-20">
@@ -352,6 +367,8 @@ const Header = () => {
           </div>
         </div>
       </section>
+     < section id="pricing">
+
       <section class="text-gray-600 body-font overflow-hidden">
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-col text-center w-full mb-20">
@@ -543,6 +560,8 @@ const Header = () => {
           </div>
         </div>
       </section>
+      </section>
+      <section id="contact-us">
       <section class="text-gray-600 body-font relative">
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-col text-center w-full mb-12">
@@ -576,6 +595,7 @@ const Header = () => {
             </div>
           </div>
         </div>
+      </section>
       </section>
       <footer class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
