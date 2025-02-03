@@ -3,7 +3,7 @@ import SVGComponent from './Svg';
 import MenuComponent from './Menu';
 import Logo from './assets/logo.jpg';
 import "./App.css";
-import CustomButton from './Custombutton';
+import CustomButton from './CustomButton';
 import { Link } from 'react-scroll';
 import AnimatedButton from './AnimatedButton';
 const Header = () => {
