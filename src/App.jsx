@@ -3,7 +3,7 @@ import SVGComponent from './Svg';
 import MenuComponent from './Menu';
 import Logo from './assets/logo.jpg';
 import "./App.css";
-import CustomButton from './CustomButton';
+import RequestButton from './RequestButton';
 import { Link } from 'react-scroll';
 import AnimatedButton from './AnimatedButton';
 const Header = () => {
@@ -26,7 +26,7 @@ const Header = () => {
           <div className="App">
       {/* Wrap the CustomButton inside the Link for smooth scrolling */}
       <Link to="contact-us" smooth={true} duration={500}>
-        <CustomButton />
+      <RequestButton />
       </Link>
     </div>
 
