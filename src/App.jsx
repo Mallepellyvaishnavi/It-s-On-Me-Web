@@ -5,7 +5,7 @@ import Logo from './assets/logo.jpg';
 import "./App.css";
 import CustomButton from './Custombutton';
 import { Link } from 'react-scroll';
-import AnimatedButton from './Animatedbutton';
+import AnimatedButton from './AnimatedButton';
 const Header = () => {
   return (
     <>
